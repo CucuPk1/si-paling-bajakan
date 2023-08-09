@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient( rgba(34, 34, 34, 0.9), rgba(0, 0, 0, 0.9)), url('img/fastposter.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+}
+
+header {
+    color: rgb(184, 179, 179);
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.logo img {
+    height: 20vh;
+}
+
+.logo h3 {
+    color: rgb(168, 39, 0);
+    font-size: 25px;
+    margin-top: -95px;
+    margin-left: 130px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    padding: 0px 20px;
+    color: white;
+}
+
+.nav ul li a:hover {
+    color: rgb(168, 39, 0);
+    font-weight: bolder;
+}
+
+.user {
+    cursor: pointer;
+    color: rgb(168, 39, 0);
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.user a {
+    padding: 10px 30px;
+    color: white;
+    background-color: rgb(168, 39, 0);
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.user a:hover {
+    background-color: black;
+    color: rgb(168, 39, 0);
+}
+
+.user i {
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 0px 14px;
+}
+
+.heropage {
+    position: absolute;
+    color: white;
+    margin-top: 90px;
+    margin-left: 160px;
+    line-height: 2;
+}
+
+.inside-heropage h1 {
+    font-size: 40px;
+}
+
+.inside-heropage p {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+
+span {
+    color: rgb(168, 39, 0);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn1 {
+    margin-top: 30px;
+}
+
+.btn1 a {
+    background-color: rgb(168, 39, 0);
+    color: white;
+    padding: 15px 100px;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.btn1 a:hover {
+    background: wheat;
+    color: rgb(168, 39, 0);
+}
+
+.poster {
+    margin-top: 130px;
+    margin-right: 150px;
+}
+
+.poster img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.poster img {
+    height: 400px;
+    float: right;
+    border-radius: 100px;
+}
+
+.boty-movies {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 650px;
+}
+
+.boty-movies h1 {
+    font-size: 20px;
+    color: rgb(168, 39, 0);
+}
+
+.boty-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boty-inside img {
+    height: 370px;
+    border-radius: 30px;
+    transition: all 200ms ease-in-out;
+}
+
+.boty-inside img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* trend */
+
+.trend-movies {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 1200px;
+}
+
+.trend-movies h1 {
+    font-size: 20px;
+    color: rgb(168, 39, 0);
+}
+
+.trend-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trend-inside img {
+    height: 370px;
+    border-radius: 30px;
+    transition: all 200ms ease-in-out;
+}
+
+.trend-inside img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer {
+    position: absolute;
+    margin-top: 1750px;
+    height: 30vh;
+    color: white;
+    background: #141414;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 20px;
+    margin-top: 115px;
+    padding: 0px 10px;
+}
+
+.socials {
+    font-size: 20px;
+    margin-top: 115px;
+    padding: 0px 10px;
+    color: white;
+    display: flex;
+    text-decoration: none;
+}
+
+.scroll i {
+    color: black;
+}
+
+.kadalgurun {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+}
+
+.kadalgurun:focus {
+    outline: none;
+}
+
+@media(max-width:360px) {
+    .nav ul {
+        display: none;
+    }
+    .kadalgurun {
+        display: block;
+    }
+}
